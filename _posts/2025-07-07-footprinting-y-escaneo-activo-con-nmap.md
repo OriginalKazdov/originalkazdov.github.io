@@ -1,8 +1,12 @@
 ---
-layout: post
+layout: single
 title: "Footprinting y escaneo activo con Nmap"
-date: 2025-07-07 16:00:00 +0000
+date: 2025-07-07
+author: kazdov
+categories: [ciberseguridad, nmap]
+tags: [nmap, escaneo, footprinting]
 ---
+
 
 Hoy estuve probando comandos de Nmap para hacer footprinting y escaneo activo.
 

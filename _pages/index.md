@@ -1,6 +1,8 @@
 ---
 layout: home
 title: "kazdov"
+permalink: /
+author_profile: true
 excerpt: "Bitácora de un pentester en formación"
 ---
 
