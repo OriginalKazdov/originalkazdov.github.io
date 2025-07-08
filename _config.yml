@@ -16,14 +16,21 @@ author:
       url: "https://twitter.com/KazdovEth"
 
 defaults:
-  # _posts
+  # POSTS individuales dentro de _posts/
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      comments: true
-      share: true
+      layout: single         # Muestra título, contenido, navegación next/prev
+      share: true            # Muestra íconos de compartir
+
+  # PÁGINAS personalizadas como /about/, /blog/, etc.
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page           # Evita navegación prev/next
+      author_profile: true   # Muestra tu perfil en el sidebar
 
 collections:
   pages:

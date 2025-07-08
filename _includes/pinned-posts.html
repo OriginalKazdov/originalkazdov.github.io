@@ -1,0 +1,15 @@
+{% assign pinned_posts = site.posts | where: "pinned", true %}
+
+{% if pinned_posts.size > 0 %}
+  <div class="pinned-posts">
+    <h2>Pinned Post</h2>
+    <ul>
+      {% for post in pinned_posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="post-date"> – {{ post.date | date: "%Y-%m-%d" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
