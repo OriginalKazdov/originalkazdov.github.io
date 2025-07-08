@@ -16,12 +16,15 @@ author:
       url: "https://twitter.com/KazdovEth"
 
 defaults:
+  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
       author_profile: true
+      comments: true
+      share: true
 
 collections:
   pages:
