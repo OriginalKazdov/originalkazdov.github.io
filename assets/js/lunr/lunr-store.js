@@ -6,20 +6,20 @@ var store = [{
         "teaser": null
       },{
         "title": "kazdov",
-        "excerpt":"Bienvenido a mi blog de ciberseguridad. Estoy estudiando para el eJPT y este espacio es donde documento mis prácticas, aprendizajes y desafíos reales.   Explorá mis entradas técnicas, experimentos y reflexiones sobre el camino del hacking ético.        Pinned Post                                 Post de bienvenida            – 2025-07-08                          ","categories": [],
+        "excerpt":"Bienvenido a mi blog de ciberseguridad. Estoy estudiando para el eJPT y este espacio es donde documento mis prácticas, aprendizajes y desafíos reales.   Explorá mis entradas técnicas, experimentos y reflexiones sobre el camino del hacking ético.        Pinned Post                                 Post de bienvenida            – 2025-07-06                          ","categories": [],
         "tags": [],
         "url": "/",
+        "teaser": null
+      },{
+        "title": "Post de bienvenida",
+        "excerpt":"¡Hola y bienvenidos! Este blog va a ser mi bitácora técnica mientras me preparo para el certificado eJPT y otros desafíos del mundo del hacking ético. La idea es compartir comandos, técnicas, aprendizajes, dudas y avances reales. Todo desde una perspectiva honesta y en construcción constante. Podés seguirme en GitHub...","categories": ["personal"],
+        "tags": ["bienvenida","blog"],
+        "url": "/personal/2025/07/06/post-de-bienvenida.html",
         "teaser": null
       },{
         "title": "Footprinting y escaneo activo con Nmap",
         "excerpt":"Hoy estuve probando comandos de Nmap para hacer footprinting y escaneo activo. Primero usé: nmap -sn -PS 80 target Con esto buscaba ver si había un host activo usando el puerto 80. Después, cuando confirmé que había algo, escaneé puertos más interesantes como: nmap -p 21,22,445,8080,3389 target También encontré una...","categories": ["ciberseguridad","nmap"],
         "tags": ["nmap","escaneo","footprinting"],
         "url": "/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap.html",
-        "teaser": null
-      },{
-        "title": "Post de bienvenida",
-        "excerpt":"¡Hola y bienvenidos! Este blog va a ser mi bitácora técnica mientras me preparo para el certificado eJPT y otros desafíos del mundo del hacking ético. La idea es compartir comandos, técnicas, aprendizajes, dudas y avances reales. Todo desde una perspectiva honesta y en construcción constante. Podés seguirme en GitHub...","categories": ["personal"],
-        "tags": ["bienvenida","blog"],
-        "url": "/personal/2025/07/08/post-de-bienvenida.html",
         "teaser": null
       }]

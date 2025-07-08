@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://originalkazdov.github.io/about/</loc>
-<lastmod>2025-07-08T20:09:29+00:00</lastmod>
+<lastmod>2025-07-08T23:07:24+00:00</lastmod>
 </url>
 <url>
 <loc>https://originalkazdov.github.io/</loc>
-<lastmod>2025-07-08T20:09:29+00:00</lastmod>
+<lastmod>2025-07-08T23:07:24+00:00</lastmod>
+</url>
+<url>
+<loc>https://originalkazdov.github.io/personal/2025/07/06/post-de-bienvenida.html</loc>
+<lastmod>2025-07-06T20:01:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://originalkazdov.github.io/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap.html</loc>
 <lastmod>2025-07-07T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://originalkazdov.github.io/personal/2025/07/08/post-de-bienvenida.html</loc>
-<lastmod>2025-07-08T20:01:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://originalkazdov.github.io/blog/</loc>
