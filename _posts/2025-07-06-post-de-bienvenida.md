@@ -1,6 +1,6 @@
 ---
 title: "Post de bienvenida"
-date: 2025-07-08 17:01:00 -0300
+date: 2025-07-06 17:01:00 -0300
 layout: single
 excerpt: "¡Bienvenidos a mi blog de ciberseguridad! Acá voy a ir documentando todo lo que aprendo mientras me preparo como pentester."
 tags: [bienvenida, blog]
