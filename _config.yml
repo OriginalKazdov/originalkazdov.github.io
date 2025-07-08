@@ -44,3 +44,4 @@ navigation:
     - label: "Sobre mí"
       url: /about/
 
+minimal_mistakes_skin: "dark"
