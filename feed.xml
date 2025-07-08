@@ -1,4 +1,112 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://originalkazdov.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://originalkazdov.github.io/" rel="alternate" type="text/html" /><updated>2025-07-08T23:07:24+00:00</updated><id>https://originalkazdov.github.io/feed.xml</id><title type="html">Kazdov’s Blog</title><subtitle>Bitácora de un futuro pentester</subtitle><author><name>Kazdov</name></author><entry><title type="html">Footprinting y escaneo activo con Nmap</title><link href="https://originalkazdov.github.io/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap.html" rel="alternate" type="text/html" title="Footprinting y escaneo activo con Nmap" /><published>2025-07-07T00:00:00+00:00</published><updated>2025-07-07T00:00:00+00:00</updated><id>https://originalkazdov.github.io/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap</id><content type="html" xml:base="https://originalkazdov.github.io/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap.html"><![CDATA[<p>Hoy estuve probando comandos de Nmap para hacer footprinting y escaneo activo.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://originalkazdov.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://originalkazdov.github.io/" rel="alternate" type="text/html" /><updated>2025-07-08T23:36:45+00:00</updated><id>https://originalkazdov.github.io/feed.xml</id><title type="html">Kazdov’s Blog</title><subtitle>Bitácora de un futuro pentester</subtitle><author><name>Kazdov</name></author><entry><title type="html">Footprinting y reconocimiento en ciberseguridad (pasivo)</title><link href="https://originalkazdov.github.io/ciberseguridad/info-gathering/2025/07/08/footprinting-y-reconocimiento-pasivo-en-ciberseguridad.html" rel="alternate" type="text/html" title="Footprinting y reconocimiento en ciberseguridad (pasivo)" /><published>2025-07-08T20:20:00+00:00</published><updated>2025-07-08T20:20:00+00:00</updated><id>https://originalkazdov.github.io/ciberseguridad/info-gathering/2025/07/08/footprinting-y-reconocimiento-pasivo-en-ciberseguridad</id><content type="html" xml:base="https://originalkazdov.github.io/ciberseguridad/info-gathering/2025/07/08/footprinting-y-reconocimiento-pasivo-en-ciberseguridad.html"><![CDATA[<p>El reconocimiento pasivo es una de las etapas más importantes dentro de un proceso de pentesting. Es la primera fase en la que comenzamos a recolectar información del objetivo <strong>sin interactuar directamente con él</strong>.</p>
+
+<hr />
+
+<h2 id="qué-significa-que-sea-pasivo">¿Qué significa que sea pasivo?</h2>
+
+<p>Quiere decir que en ningún momento enviamos tráfico al objetivo. No escaneamos sus servidores, ni interactuamos con sus sistemas. Solo <strong>buscamos y analizamos datos públicos disponibles en Internet</strong>.</p>
+
+<blockquote>
+  <p>Si en algún punto hacemos contacto con el target (por ejemplo, con un escaneo Nmap o un curl a su web), ya estaríamos hablando de técnicas activas. Eso lo vemos en otro posteo.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="qué-información-buscamos">¿Qué información buscamos?</h2>
+
+<p>El objetivo del footprinting es reunir <strong>la mayor cantidad de información posible</strong> para usar en las fases siguientes del pentest: escaneo, explotación y post-explotación.</p>
+
+<p>Entre más información recolectemos ahora, <strong>menos sorpresas</strong> vamos a tener después. Por eso es importante ser minucioso cuando recolectamos información.</p>
+
+<p>Podemos buscar:</p>
+
+<ul>
+  <li>Direcciones IP públicas</li>
+  <li>Registros DNS y subdominios</li>
+  <li>Nombres de dominio y fechas de expiración</li>
+  <li>Correos electrónicos relacionados al dominio</li>
+  <li>Redes sociales</li>
+  <li>Tecnología que usa la web (CMS, librerías JS)</li>
+  <li>Archivos de configuración públicos (como <code class="language-plaintext highlighter-rouge">robots.txt</code>, <code class="language-plaintext highlighter-rouge">sitemap.xml</code>)</li>
+</ul>
+
+<hr />
+
+<h2 id="herramientas-útiles-para-reconocimiento-pasivo">Herramientas útiles para reconocimiento pasivo</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Herramienta</th>
+      <th>Función</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">whois</code></td>
+      <td>Información del dominio y dueño</td>
+      <td>Pasiva</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">host</code></td>
+      <td>DNS lookups</td>
+      <td>Pasiva</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dig</code></td>
+      <td>Consultas DNS avanzadas</td>
+      <td>Pasiva</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">theHarvester</code></td>
+      <td>Emails, hosts y nombres</td>
+      <td>Pasiva</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">wafw00f</code></td>
+      <td>Detectar si hay un WAF (activo)</td>
+      <td>Activa</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">curl robots.txt</code></td>
+      <td>Acceso al archivo de exclusiones</td>
+      <td>Pasiva</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="ejemplo-usando-whois-y-host">Ejemplo: usando <code class="language-plaintext highlighter-rouge">whois</code> y <code class="language-plaintext highlighter-rouge">host</code></h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>whois example.com
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>host example.com
+</code></pre></div></div>
+
+<p>Salida parcial:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>example.com has address 93.184.216.34
+example.com mail is handled by 0 .
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="explorando-robotstxt">Explorando robots.txt</h2>
+
+<p>Este archivo está en la mayoría de las páginas web y le dice a los bots qué partes de la página no tienen que indexar.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-s</span> https://example.com/robots.txt
+</code></pre></div></div>
+
+<p>Muchas paginas esconden rutas sensibles aca. Si ves rutas como <code class="language-plaintext highlighter-rouge">/admin</code>, <code class="language-plaintext highlighter-rouge">/secret</code>, o <code class="language-plaintext highlighter-rouge">/backup/</code>, tomá nota. No deberías accederlas sin autorización, pero saber que existen te da información valiosa.</p>
+
+<hr />
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Esta fase es silenciosa pero poderosa. Es la base para todo el proceso de pentesting. No se subestima. ¡El footprinting bien hecho puede ahorrarte horas de trabajo posterior!</p>]]></content><author><name>Kazdov</name></author><category term="ciberseguridad" /><category term="info-gathering" /><category term="footprinting" /><category term="reconocimiento" /><category term="pasivo" /><category term="pentesting" /><summary type="html"><![CDATA[Resumen y apuntes sobre las técnicas de recopilación pasiva de información en ciberseguridad.]]></summary></entry><entry><title type="html">Footprinting y escaneo activo con Nmap</title><link href="https://originalkazdov.github.io/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap.html" rel="alternate" type="text/html" title="Footprinting y escaneo activo con Nmap" /><published>2025-07-07T00:00:00+00:00</published><updated>2025-07-07T00:00:00+00:00</updated><id>https://originalkazdov.github.io/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap</id><content type="html" xml:base="https://originalkazdov.github.io/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap.html"><![CDATA[<p>Hoy estuve probando comandos de Nmap para hacer footprinting y escaneo activo.</p>
 
 <p>Primero usé:</p>
 

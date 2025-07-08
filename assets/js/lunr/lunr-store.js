@@ -22,4 +22,10 @@ var store = [{
         "tags": ["nmap","escaneo","footprinting"],
         "url": "/ciberseguridad/nmap/2025/07/07/footprinting-y-escaneo-activo-con-nmap.html",
         "teaser": null
+      },{
+        "title": "Footprinting y reconocimiento en ciberseguridad (pasivo)",
+        "excerpt":"El reconocimiento pasivo es una de las etapas más importantes dentro de un proceso de pentesting. Es la primera fase en la que comenzamos a recolectar información del objetivo sin interactuar directamente con él. ¿Qué significa que sea pasivo? Quiere decir que en ningún momento enviamos tráfico al objetivo. No...","categories": ["ciberseguridad","info-gathering"],
+        "tags": ["footprinting","reconocimiento","pasivo","pentesting"],
+        "url": "/ciberseguridad/info-gathering/2025/07/08/footprinting-y-reconocimiento-pasivo-en-ciberseguridad.html",
+        "teaser": null
       }]
