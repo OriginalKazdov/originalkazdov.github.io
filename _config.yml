@@ -59,4 +59,3 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-3XLSBDW1GL"
-
