@@ -54,3 +54,9 @@ navigation:
       url: /about/
 
 minimal_mistakes_skin: "dark"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-3XLSBDW1GL"
+
