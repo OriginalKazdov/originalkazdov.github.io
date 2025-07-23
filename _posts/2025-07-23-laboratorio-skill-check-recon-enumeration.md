@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Laboratorio: Skill Check Recon & Enumeration"
-date: 2025-07-23 20:20:00 +0000
+date: 2025-07-23 16:20:00 +0000
 author: Kazdov
 excerpt: "Resolucion de laboratorio que requiere saber bien Recon & Enumeration"
 categories:
