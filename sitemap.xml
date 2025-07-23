@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://originalkazdov.github.io/about/</loc>
-<lastmod>2025-07-23T19:20:07+00:00</lastmod>
+<lastmod>2025-07-23T19:23:25+00:00</lastmod>
 </url>
 <url>
 <loc>https://originalkazdov.github.io/</loc>
-<lastmod>2025-07-23T19:20:07+00:00</lastmod>
+<lastmod>2025-07-23T19:23:25+00:00</lastmod>
 </url>
 <url>
 <loc>https://originalkazdov.github.io/personal/2025/07/06/post-de-bienvenida.html</loc>
@@ -19,6 +19,10 @@
 <url>
 <loc>https://originalkazdov.github.io/ciberseguridad/info-gathering/2025/07/08/footprinting-y-reconocimiento-pasivo-en-ciberseguridad.html</loc>
 <lastmod>2025-07-08T20:20:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://originalkazdov.github.io/ciberseguridad/2025/07/23/laboratorio-skill-check-recon-enumeration.html</loc>
+<lastmod>2025-07-23T16:20:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://originalkazdov.github.io/blog/</loc>

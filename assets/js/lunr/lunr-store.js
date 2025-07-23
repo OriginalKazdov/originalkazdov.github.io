@@ -28,4 +28,10 @@ var store = [{
         "tags": ["footprinting","reconocimiento","pasivo","pentesting"],
         "url": "/ciberseguridad/info-gathering/2025/07/08/footprinting-y-reconocimiento-pasivo-en-ciberseguridad.html",
         "teaser": null
+      },{
+        "title": "Laboratorio: Skill Check Recon & Enumeration",
+        "excerpt":"Aclaracion Disculpen la demora para publicar un posteo, estuve muy ocupado estudiando mas a fondo el certificado y enfocandome en ello. Este blog es simplemente un sub producto de mis anotaciones y a modo de bitacora personal. Habiendo dicho eso, procedo a contarles como fue el laboratorio. 🎯 Objetivo Realizar...","categories": ["ciberseguridad"],
+        "tags": ["pasivo","activo","enum","recon"],
+        "url": "/ciberseguridad/2025/07/23/laboratorio-skill-check-recon-enumeration.html",
+        "teaser": null
       }]

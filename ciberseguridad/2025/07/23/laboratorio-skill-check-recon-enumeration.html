@@ -1,0 +1,415 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.1 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Laboratorio: Skill Check Recon &amp; Enumeration - Kazdov’s Blog</title>
+<meta name="description" content="Resolucion de laboratorio que requiere saber bien Recon &amp; Enumeration">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Kazdov's Blog">
+<meta property="og:title" content="Laboratorio: Skill Check Recon &amp; Enumeration">
+<meta property="og:url" content="https://originalkazdov.github.io/ciberseguridad/2025/07/23/laboratorio-skill-check-recon-enumeration.html">
+
+
+  <meta property="og:description" content="Resolucion de laboratorio que requiere saber bien Recon &amp; Enumeration">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-07-23T16:20:00+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://originalkazdov.github.io/ciberseguridad/2025/07/23/laboratorio-skill-check-recon-enumeration.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Kazdov's Blog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3XLSBDW1GL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3XLSBDW1GL');
+</script>
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Kazdov's Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Inicio</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >Sobre mí</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Laboratorio: Skill Check Recon &amp; Enumeration">
+    <meta itemprop="description" content="Resolucion de laboratorio que requiere saber bien Recon &amp; Enumeration">
+    <meta itemprop="datePublished" content="2025-07-23T16:20:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://originalkazdov.github.io/ciberseguridad/2025/07/23/laboratorio-skill-check-recon-enumeration.html" itemprop="url">Laboratorio: Skill Check Recon &amp; Enumeration
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
+<h2 id="aclaracion">Aclaracion</h2>
+
+<p>Disculpen la demora para publicar un posteo, estuve muy ocupado estudiando mas a fondo el certificado y enfocandome en ello. Este blog es simplemente un sub producto de mis anotaciones y a modo de bitacora personal. Habiendo dicho eso, procedo a contarles como fue el laboratorio.</p>
+
+<h2 id="-objetivo">🎯 Objetivo</h2>
+
+<p>Realizar reconocimiento activo y pasivo sobre el host, identificar servicios abiertos, explorar posibles rutas expuestas, acceder a servidores vulnerables y capturar 4 flags.
+Cada flag tiene formato: <code class="language-plaintext highlighter-rouge">FLAGX_md5hash</code>.</p>
+
+<hr />
+
+<h2 id="️-herramientas-usadas">🛠️ Herramientas usadas</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">nmap</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ftp</code></li>
+  <li><code class="language-plaintext highlighter-rouge">curl</code></li>
+  <li><code class="language-plaintext highlighter-rouge">mysql</code> (CLI)</li>
+  <li>Explorador web</li>
+  <li>Sentido común y un poco de darle vuelta a las cosas.</li>
+</ul>
+
+<hr />
+
+<h2 id="-flag-1--http-header-disclosure">🏁 Flag 1 – HTTP Header Disclosure</h2>
+
+<p><strong>🧩 Pista:</strong>
+<em>“El servidor anuncia su identidad en cada respuesta. Fijate bien, hay algo raro.”</em></p>
+
+<p><strong>📌 Solución:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-I</span> http://target.ine.local
+</code></pre></div></div>
+
+<p>📥 El header <code class="language-plaintext highlighter-rouge">Server:</code> trae directamente el flag.
+Literalmente estaba en la frente del server.</p>
+
+<p><strong>✅ Lección:</strong>
+Los headers HTTP pueden filtrar info sensible, como versiones de software o incluso el flag en mi caso.</p>
+
+<hr />
+
+<h2 id="-flag-2--robotstxt-y-el-archivo-escondido">🏁 Flag 2 – robots.txt y el archivo escondido</h2>
+
+<p><strong>🧩 Pista:</strong>
+<em>“Las instrucciones del portero revelan lo que debería estar oculto.”</em></p>
+
+<p><strong>📌 Solución:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://target.ine.local/robots.txt
+</code></pre></div></div>
+
+<p>Vimos <code class="language-plaintext highlighter-rouge">/secret-info/</code> como ruta bloqueada. Fui ahí, y apareció un <code class="language-plaintext highlighter-rouge">flag.txt</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://target.ine.local/secret-info/flag.txt
+</code></pre></div></div>
+
+<p><strong>✅ Lección:</strong>
+<code class="language-plaintext highlighter-rouge">robots.txt</code> es una mina de oro para pentesters. No siempre es un candado, muchas veces es una guía de lo que NO quieren que veas. Si hay algo que no quieren que veas echale un ojo igual.</p>
+
+<hr />
+
+<h2 id="-flag-3--ftp-abierto-con-acceso-anónimo">🏁 Flag 3 – FTP abierto con acceso anónimo</h2>
+
+<p><strong>🧩 Pista:</strong>
+<em>“El acceso anónimo a veces lleva a tesoros olvidados.”</em></p>
+
+<p><strong>📌 Solución:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap <span class="nt">-Pn</span> <span class="nt">-p-</span> <span class="nt">-A</span> target.ine.local
+</code></pre></div></div>
+
+<p>Vimos FTP en el puerto 21 con <code class="language-plaintext highlighter-rouge">Anonymous login allowed</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ftp target.ine.local
+<span class="c"># user: ftp</span>
+<span class="c"># password: (Enter vacío)</span>
+</code></pre></div></div>
+
+<p>Luego:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls
+</span>get flag.txt
+<span class="nb">cat </span>flag.txt
+</code></pre></div></div>
+
+<p><strong>✅ Lección:</strong>
+Si hay FTP, hay que testear login anónimo.
+Muchas veces los admins ni saben que está habilitado.
+Y a veces… te dejan <strong>credenciales de base de datos</strong> 👀</p>
+
+<hr />
+
+<h2 id="-flag-4--mysql-exposed-y-mal-configurado">🏁 Flag 4 – MySQL exposed y mal configurado</h2>
+
+<p><strong>🧩 Pista:</strong>
+<em>“Una base bien nombrada puede revelar secretos.”</em></p>
+
+<p><strong>📌 Usamos las creds del FTP:</strong></p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>db_admin:password@123
+</code></pre></div></div>
+
+<p>Y conectamos:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql <span class="nt">-h</span> target.ine.local <span class="nt">-u</span> db_admin <span class="nt">-p</span>
+<span class="c"># password: password@123</span>
+</code></pre></div></div>
+
+<p>Después:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">DATABASES</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>✅ Lección:</strong>
+Si encontrás credenciales tiradas por ahí, probalas.
+FTP y bases de datos mal configuradas van de la mano más seguido de lo que parece.</p>
+
+<hr />
+
+<h2 id="-reflexiones">📚 Reflexiones</h2>
+
+<p>No todo está en el contenido del curso.
+Este lab te pide perseverancia, prueba y error, lógica.
+Esto se resuelve <strong>jugando</strong>, <strong>deduciendo</strong>, y <strong>tocando todo</strong> lo que se pueda.</p>
+
+<p>Aprendí que “reconocimiento” es más que tirar <code class="language-plaintext highlighter-rouge">nmap</code> por todos lados, sino mas bien explorar pacientemente.
+Es pensar cómo se construyen las cosas del lado del sysadmin, y cómo puede fallar.</p>
+
+<p>Muchas de las cosas que usé (como <code class="language-plaintext highlighter-rouge">ftp</code> o <code class="language-plaintext highlighter-rouge">robots.txt</code>) no son técnicas avanzadas, pero sí <strong>muy efectivas</strong>.</p>
+
+<hr />
+
+<h2 id="-cosas-que-puedo-reforzar">✅ Cosas que puedo reforzar</h2>
+
+<ul>
+  <li>Saber mejor <strong>qué mirar en headers HTTP</strong></li>
+  <li>Practicar más con <code class="language-plaintext highlighter-rouge">ftp</code>, <code class="language-plaintext highlighter-rouge">nmap</code> y <code class="language-plaintext highlighter-rouge">mysql CLI</code></li>
+  <li>Familiarizarme con herramientas de enum como <code class="language-plaintext highlighter-rouge">gobuster</code>, <code class="language-plaintext highlighter-rouge">dirb</code>, <code class="language-plaintext highlighter-rouge">ffuf</code>, <code class="language-plaintext highlighter-rouge">whatweb</code></li>
+  <li>Hacer más labs <strong>sin pedir ayuda al principio</strong>. Darme más tiempo para pensar.</li>
+</ul>
+
+<hr />
+
+<p><em>Posteado por kazdov 🧠💥</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-07-23T16:20:00+00:00">July 23, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=Laboratorio%3A+Skill+Check+Recon+%26+Enumeration%20https%3A%2F%2Foriginalkazdov.github.io%2Fciberseguridad%2F2025%2F07%2F23%2Flaboratorio-skill-check-recon-enumeration.html" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Foriginalkazdov.github.io%2Fciberseguridad%2F2025%2F07%2F23%2Flaboratorio-skill-check-recon-enumeration.html" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://originalkazdov.github.io/ciberseguridad/2025/07/23/laboratorio-skill-check-recon-enumeration.html" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=Laboratorio%3A+Skill+Check+Recon+%26+Enumeration%20https%3A%2F%2Foriginalkazdov.github.io%2Fciberseguridad%2F2025%2F07%2F23%2Flaboratorio-skill-check-recon-enumeration.html" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ciberseguridad/info-gathering/2025/07/08/footprinting-y-reconocimiento-pasivo-en-ciberseguridad.html" class="pagination--pager" title="Footprinting y reconocimiento en ciberseguridad (pasivo)">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://originalkazdov.github.io">Kazdov's Blog</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
