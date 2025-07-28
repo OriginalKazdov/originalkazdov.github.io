@@ -3,6 +3,9 @@ description: "Bitácora de un futuro pentester"
 url: "https://originalkazdov.github.io"
 baseurl: "" # no lo toques
 
+og:
+  default_image: "/assets/images/link_preview_image.png"
+
 author:
   name: "Kazdov"
   bio: "Estudiando para el eJPT. Blog personal sobre ciberseguridad."
